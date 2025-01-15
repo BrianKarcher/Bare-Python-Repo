@@ -1,9 +1,9 @@
 import pytest
-from pthon import pthon
+from src.MyTestApp import MyTestApp
 
 def test_true():
-    tst = pthon()
-    assert tst.stuffToTest()
+    tst = MyTestApp()
+    assert tst.stuffToTest() == "Hello World"
 
 # To invoke the pytest framework and run all tests
 if __name__ == "__main__":
